@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ef55f25ce15df4dacc431744d9f696, type: 3}
+  m_Name: 1-5 CherryTomato
+  m_EditorClassIdentifier: 
+  fruitName: "\uBC29\uC6B8\uD1A0\uB9C8\uD1A0"
+  fruitIndex: 4
+  fruitType: 5
+  fruitPrefab: {fileID: 3273092837772327562, guid: cefa4808bc603794a9e816f4ac1661d8, type: 3}
+  fruitImage: {fileID: 2678635604096917620, guid: cb15b774382e61c4b90879ef12eb93b4, type: 3}
+  fruitLevel: 0
+  initialFruitPrice: 5
+  fruitPrice: 5
+  increaseRate: 3
+  upgradeCost: 300

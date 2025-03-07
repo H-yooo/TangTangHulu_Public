@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ef55f25ce15df4dacc431744d9f696, type: 3}
+  m_Name: 2-3 Blueberry
+  m_EditorClassIdentifier: 
+  fruitName: "\uBE14\uB8E8\uBCA0\uB9AC"
+  fruitIndex: 7
+  fruitType: 10
+  fruitPrefab: {fileID: 7293946339500912417, guid: 2519c2ca8a8a52946998652bc7f7f502, type: 3}
+  fruitImage: {fileID: 7721456175209561083, guid: 6a2a6369791b9be468869452cb39a00e, type: 3}
+  fruitLevel: 0
+  initialFruitPrice: 60
+  fruitPrice: 60
+  increaseRate: 15
+  upgradeCost: 2500

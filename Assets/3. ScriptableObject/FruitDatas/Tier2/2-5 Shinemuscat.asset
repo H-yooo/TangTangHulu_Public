@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ef55f25ce15df4dacc431744d9f696, type: 3}
+  m_Name: 2-5 Shinemuscat
+  m_EditorClassIdentifier: 
+  fruitName: "\uC0E4\uC778\uBA38\uC2A4\uCF13"
+  fruitIndex: 9
+  fruitType: 6
+  fruitPrefab: {fileID: 6835771385096537104, guid: 2f93c91fb8ef9be4d96d3361e72f63dd, type: 3}
+  fruitImage: {fileID: 5614552032870645437, guid: 14ce0b78525b7f74090ed840e5ee30d3, type: 3}
+  fruitLevel: 0
+  initialFruitPrice: 70
+  fruitPrice: 70
+  increaseRate: 20
+  upgradeCost: 3000

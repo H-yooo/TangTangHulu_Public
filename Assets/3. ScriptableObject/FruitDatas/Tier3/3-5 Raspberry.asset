@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ef55f25ce15df4dacc431744d9f696, type: 3}
+  m_Name: 3-5 Raspberry
+  m_EditorClassIdentifier: 
+  fruitName: "\uB77C\uC988\uBCA0\uB9AC"
+  fruitIndex: 14
+  fruitType: 11
+  fruitPrefab: {fileID: 6596443104222444044, guid: 42bd1bd7a592edc45912dd2c2c36f28f, type: 3}
+  fruitImage: {fileID: 7842081251940563907, guid: 1cc9a62e28d3e344d89fa4bb2d06f984, type: 3}
+  fruitLevel: 0
+  initialFruitPrice: 800
+  fruitPrice: 800
+  increaseRate: 250
+  upgradeCost: 30000

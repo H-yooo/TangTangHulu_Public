@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ef55f25ce15df4dacc431744d9f696, type: 3}
+  m_Name: 4-4 Dragonfruit
+  m_EditorClassIdentifier: 
+  fruitName: "\uB4DC\uB798\uACE4\uD6C4\uB974\uCE20"
+  fruitIndex: 18
+  fruitType: 17
+  fruitPrefab: {fileID: 3447826426158743945, guid: d402d57e46710cd4ab7f2410e96f0d34, type: 3}
+  fruitImage: {fileID: 1554445021858356781, guid: e42df28092ac9f7479a45fa23662d6e1, type: 3}
+  fruitLevel: 0
+  initialFruitPrice: 4000
+  fruitPrice: 4000
+  increaseRate: 1600
+  upgradeCost: 230000

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ef55f25ce15df4dacc431744d9f696, type: 3}
+  m_Name: 4-2 Mango
+  m_EditorClassIdentifier: 
+  fruitName: "\uB9DD\uACE0"
+  fruitIndex: 16
+  fruitType: 20
+  fruitPrefab: {fileID: 4214102372048286963, guid: f647be67745797449b1ca0b7824ff272, type: 3}
+  fruitImage: {fileID: 6676469770941564744, guid: f795fd17099bc4844a113d2992513922, type: 3}
+  fruitLevel: 0
+  initialFruitPrice: 3000
+  fruitPrice: 3000
+  increaseRate: 12000
+  upgradeCost: 180000

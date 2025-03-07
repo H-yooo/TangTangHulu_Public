@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c197231c1421824c82ca23f6b0f3c50, type: 3}
+  m_Name: F. UpgradeFruit
+  m_EditorClassIdentifier: 
+  upgradeName: "\uACFC\uC77C\uC120\uBB3C\uC138\uD2B8"
+  description: "\uC120\uD0DD\uD55C \uACFC\uC77C\uC758 \uB4F1\uAE09\uC744 \uC62C\uB824\uC90D\uB2C8\uB2E4.
+    \uC774\uBBF8 \uCD5C\uACE0 \uB4F1\uAE09\uC774\uB77C\uBA74, \uACFC\uC77C\uC758
+    \uAC00\uACA9\uC744 20G \uC62C\uB824\uC90D\uB2C8\uB2E4."
+  upgradeImage: {fileID: 0}
+  tier: 6
+  level: 0
+  maxLevel: 10000

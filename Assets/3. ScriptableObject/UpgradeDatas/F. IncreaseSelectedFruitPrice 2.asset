@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c197231c1421824c82ca23f6b0f3c50, type: 3}
+  m_Name: F. IncreaseSelectedFruitPrice 2
+  m_EditorClassIdentifier: 
+  upgradeName: "\uACE0\uAE09\uC720\uAE30\uB18D\uACFC\uC77C"
+  description: "\uC720\uAE30\uB18D\uC73C\uB85C \uC218\uD655\uD55C \uACFC\uC77C\uC785\uB2C8\uB2E4.
+    \uC120\uD0DD\uD55C \uACFC\uC77C\uC758 \uAC00\uACA9\uC744 20G \uC62C\uB9BD\uB2C8\uB2E4.
+    (\uD574\uB2F9 \uACFC\uC77C\uC758 \uD2F0\uC5B4 \uC5C5\uADF8\uB808\uC774\uB4DC
+    \uC2DC \uC62C\uB77C\uAC04 \uAC00\uACA9\uC740 \uBC18\uC601\uB418\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4.)"
+  upgradeImage: {fileID: 0}
+  tier: 4
+  level: 0
+  maxLevel: 10000

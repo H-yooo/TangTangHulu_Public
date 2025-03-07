@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ef55f25ce15df4dacc431744d9f696, type: 3}
+  m_Name: 3-4 Miniapple
+  m_EditorClassIdentifier: 
+  fruitName: "\uBBF8\uB2C8\uC0AC\uACFC"
+  fruitIndex: 13
+  fruitType: 13
+  fruitPrefab: {fileID: 5661479857906573314, guid: b56f98f8e628d9a4aad3a09051089004, type: 3}
+  fruitImage: {fileID: 8555518347205978357, guid: a5764a00c844a7f4082283a2b567aa3c, type: 3}
+  fruitLevel: 0
+  initialFruitPrice: 700
+  fruitPrice: 700
+  increaseRate: 200
+  upgradeCost: 25000

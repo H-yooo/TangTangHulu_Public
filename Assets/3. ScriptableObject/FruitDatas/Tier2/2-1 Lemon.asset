@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ef55f25ce15df4dacc431744d9f696, type: 3}
+  m_Name: 2-1 Lemon
+  m_EditorClassIdentifier: 
+  fruitName: "\uB808\uBAAC"
+  fruitIndex: 5
+  fruitType: 9
+  fruitPrefab: {fileID: 56052808308246432, guid: e8909d8252221044991e72043fbc590c, type: 3}
+  fruitImage: {fileID: 8069822606107743938, guid: 777de5ffcff256f4e8e2a6f794f2c463, type: 3}
+  fruitLevel: 0
+  initialFruitPrice: 50
+  fruitPrice: 50
+  increaseRate: 10
+  upgradeCost: 1500

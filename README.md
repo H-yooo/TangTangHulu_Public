@@ -6,7 +6,7 @@
 <br/>
 
 # 📽️ 게임 영상
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=zq1Hkg4j4iI&t=1s" frameborder="0" allowfullscreen></iframe>
+[![비디오 썸네일](![image](https://github.com/user-attachments/assets/d37b56c1-1b61-4304-9634-b2a0409a4775))](https://www.youtube.com/watch?v=zq1Hkg4j4iI&t=1s)
 탕후루 가게를 운영하며 손님이 요청하는 탕후루를 만들어 판매하는 캐주얼 타이쿤 게임입니다.
 
 <br/>

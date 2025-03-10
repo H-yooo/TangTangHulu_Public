@@ -1,12 +1,30 @@
-# 🍓 Tanghulu 🫐
-![image](https://github.com/user-attachments/assets/cb3141fa-8183-44f3-8c04-328349f8ea58)
-![image](https://github.com/user-attachments/assets/5ee28387-7249-4220-834e-68ae88b1684a)
-![image](https://github.com/user-attachments/assets/da203bb3-77bd-4a65-967a-9a4f55abe55c)
+# 🍓 Tanghulu 🍇
+![image](https://github.com/user-attachments/assets/909e40f3-0f69-40e2-84d4-05cde4edf317)
 
-
-
-
-
-
+# 📽️ 게임 영상
+https://www.youtube.com/watch?v=zq1Hkg4j4iI&t=1s
 
 > *개발기간 : 2024-10 ~ 
+
+<br/>
+
+탕후루 가게를 운영하며 손님이 요청하는 탕후루를 만들어 판매하는 캐주얼 타이쿤 게임입니다.
+
+#  목차 
+```
+1. 개발 환경
+2. 주요 기능
+3. 
+4. 
+5. 기능 세부
+```
+
+<br/><br/>
+
+# :wrench: 개발 환경
+
+* ``C#``
+* ``Unity 2022.3.25f1 (LTS)``
+* ``Visual Studio 2022``
+* ``.Net 8.0``
+* ``Aseprite``

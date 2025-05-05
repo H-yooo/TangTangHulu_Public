@@ -4,7 +4,8 @@
 
 <br/><br/>
 # 📽️ 게임 영상
-[![이미지 설명](https://github.com/user-attachments/assets/01d6c508-5cf9-4cdb-9865-ab01156120c4)](https://www.youtube.com/watch?v=zq1Hkg4j4iI&t=1s)
+[![이미지 설명](https://github.com/user-attachments/assets/90aa002f-5918-4dc4-ba2e-52b623f1263f)](https://www.youtube.com/watch?v=LoyRfFboDuY)
+
 
 <br/><br/>
 #  목차 

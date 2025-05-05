@@ -5,6 +5,7 @@ using UnityEngine;
 public class InputManager : GenericSingleton<InputManager>
 {
     [SerializeField] private GameObject touchableArea; // 터치가능한 Area
+    [SerializeField] private GameObject fruitEffectPrefab;
 
     public GameObject TouchableArea // touchableArea에 접근할 수 있는 프로퍼티
     {
@@ -84,6 +85,25 @@ public class InputManager : GenericSingleton<InputManager>
         }
     }
 
+    private void SpawnFruitEffect(Vector3 worldPosition, bool isSuccess)
+    {
+        GameObject effect = Instantiate(fruitEffectPrefab, worldPosition, Quaternion.identity);
+        Animator anim = effect.GetComponentInChildren<Animator>();
+        if (anim == null) return;
+
+        if (isSuccess)
+        {
+            int randomEffect = Random.Range(0, 4); // 0:Red, 1:Blue, 2:Green, 3:Pink
+            anim.SetInteger("EffectResult", randomEffect);
+        }
+        else
+        {
+            anim.SetInteger("EffectResult", 99); // 실패 이펙트
+        }
+
+        Destroy(effect, 1.2f); // 일정 시간 뒤 오브젝트 제거
+    }
+
     private void HandleClick()
     {
         // 화면(Screen)에서 터치 위치(Input.mousePosition)를 월드 좌표(WorldPoint)로 변환
@@ -97,6 +117,12 @@ public class InputManager : GenericSingleton<InputManager>
             if (hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Fruit"))
             {
                 GameObject selectedFruit = hit.collider.gameObject;
+
+                Vector3 worldPos = selectedFruit.transform.position;
+                bool isMatch = FruitManager.Instance.IsCorrectFruit(selectedFruit);
+                SpawnFruitEffect(worldPos, isMatch); // 성공/실패 이펙트 실행
+
+
                 FruitManager.Instance.OnFruitSelected(selectedFruit);
             }
         }
@@ -104,6 +130,8 @@ public class InputManager : GenericSingleton<InputManager>
 
     private void HandleDrag(Vector2 dragDirection)
     {
+        SoundManager.Instance.PlaySFX("Swipe");
+
         float dragThreshold = 150f; // 드래그 거리 임계값
 
         if (Mathf.Abs(dragDirection.x) < dragThreshold)

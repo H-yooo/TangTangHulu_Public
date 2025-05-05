@@ -41,6 +41,7 @@ public class LobbyCanvas : MonoBehaviour
 
     private void OnLoadGameBtnClicked()
     {
+        SoundManager.Instance.PlaySFX("Click");
         isNewGame = false;
         saveSlotSelectionPanel.SetActive(true);
         DisableButtons();
@@ -48,6 +49,7 @@ public class LobbyCanvas : MonoBehaviour
 
     private void OnNewGameBtnClicked()
     {
+        SoundManager.Instance.PlaySFX("Click");
         isNewGame = true;
         saveSlotSelectionPanel.SetActive(true);
         DisableButtons();
@@ -56,16 +58,18 @@ public class LobbyCanvas : MonoBehaviour
 
     public void OnOptionBtnClicked()
     {
-        optionPanel.SetActive(true);
+        OPtionPanelCanvas.Instance.OpenOptionPanel();
     }
 
     private void OnQuitBtnClicked()
     {
+        SoundManager.Instance.PlaySFX("Click");
         Application.Quit();
     }
 
     public void OnSlotSelected(string slotName)
     {
+        SoundManager.Instance.PlaySFX("Click");
         selectedSlot = slotName;
         GameManager.Instance.SetSelectedSlot(slotName); // GameManagerø° ΩΩ∑‘ ¿Ã∏ß ¿¸¥ﬁ
 
@@ -151,6 +155,7 @@ public class LobbyCanvas : MonoBehaviour
     private void CloseSlotSelectionPanel()
     {
         // ΩΩ∑‘ º±≈√ √¢ ¥›±‚
+        SoundManager.Instance.PlaySFX("Click");
         saveSlotSelectionPanel.SetActive(false);
         EnableButtons();
     }

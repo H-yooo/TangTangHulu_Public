@@ -22,7 +22,7 @@ public class FruitUpgradeButton : MonoBehaviour
 
         // UI 요소에 데이터 설정
         fruitImage.sprite = data.fruitImage.sprite;
-        UpgradeInformation();
+        UpgradeInformationWithoutSound();
 
         // 버튼 이벤트 설정
         upgradeButton.onClick.RemoveAllListeners();
@@ -53,11 +53,27 @@ public class FruitUpgradeButton : MonoBehaviour
         }
     }
 
+    private void UpgradeInformationWithoutSound()
+    {
+        if (fruitData.fruitLevel < 10)
+        {
+            descriptionText.text = $"{fruitData.fruitName} \nLevel : Lv.{fruitData.fruitLevel} -> Lv.{fruitData.fruitLevel + 1} \nPrice : {fruitData.fruitPrice}G -> {fruitData.fruitPrice + fruitData.increaseRate}G";
+            costText.text = $"{fruitData.upgradeCost}G";
+        }
+        else
+        {
+            descriptionText.text = "특정 트로피를 획득해야 등급을 Up할 수 있습니다.";
+            costText.text = GetTournamentStage();
+            CheckUpgradeAvailability();
+        }
+    }
+
     private void UpgradeInformation()
     {
         if (fruitData.fruitLevel < 10)
         {
-            descriptionText.text = $"{fruitData.fruitName} \nLevel : {fruitData.fruitLevel} -> {fruitData.fruitLevel + 1} \nPrice : {fruitData.fruitPrice} -> {fruitData.fruitPrice + fruitData.increaseRate}";
+            SoundManager.Instance.PlaySFX("Purchase");
+            descriptionText.text = $"{fruitData.fruitName} \nLevel : Lv.{fruitData.fruitLevel} -> Lv.{fruitData.fruitLevel + 1} \nPrice : {fruitData.fruitPrice}G -> {fruitData.fruitPrice + fruitData.increaseRate}G";
             costText.text = $"{fruitData.upgradeCost}G";
         }
         else

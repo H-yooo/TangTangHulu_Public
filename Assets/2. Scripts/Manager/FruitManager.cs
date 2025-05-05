@@ -51,6 +51,17 @@ public class FruitManager : GenericSingleton<FruitManager>
         }
     }
 
+    public bool IsCorrectFruit(GameObject selectedFruit)
+    {
+        if (matchFruit == null || selectedFruit == null) return false;
+
+        FruitType selectedType = GetFruitType(selectedFruit);
+        if (selectedType == FruitType.None) return false;
+
+        // matchFruit에 있는 정답 과일 리스트와 비교
+        return matchFruit.IsFruitMatched(selectedType);
+    }
+
 
     private void Update()
     {

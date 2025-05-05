@@ -42,12 +42,14 @@ public class NotificationCanvas : GenericSingleton<NotificationCanvas>
     // Yes / No 콜백
     private void OnYesButtonClicked()
     {
+        SoundManager.Instance.PlaySFX("Click");
         onConfirm?.Invoke();  // 확인 콜백 호출
         CloseNotificationPanel2();
     }
 
     private void OnNoButtonClicked()
     {
+        SoundManager.Instance.PlaySFX("Click");
         onCancel?.Invoke();  // 취소 콜백 호출
         CloseNotificationPanel2();
     }

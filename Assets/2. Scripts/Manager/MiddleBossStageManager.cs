@@ -66,6 +66,8 @@ public class MiddleBossStageManager : GenericSingleton<MiddleBossStageManager>
         UpdateMiddleBossStageUI();
 
         VillageManager.Instance.OnOpenShop();
+
+        SoundManager.Instance.PlayBGM("MiddleBossStage");
     }
 
     private void SetTargetTanghuluCount(int index)

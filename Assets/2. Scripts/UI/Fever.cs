@@ -19,6 +19,8 @@ public class Fever : MonoBehaviour
     private Image fillImage; // 슬라이더 Fill Area의 이미지
     private float colorChangeSpeed = 3f; // 색상 변화 속도
 
+    public bool IsPaused { get; set; } = false;
+
     public float GaugeIncrease
     {
         get { return _gaugeIncrease; }
@@ -45,7 +47,9 @@ public class Fever : MonoBehaviour
 
     private void Update()
     {
-        if(true)
+        if (IsPaused) return;
+
+        if (true)
         {
             if (feverGaugeSlider.value > 0)
             {
@@ -110,6 +114,8 @@ public class Fever : MonoBehaviour
         // 감소 속도 계산: 게이지를 duration 동안 0으로 만들도록 설정
         gaugeDecreaseRate = (feverGaugeSlider.value * 100) / feverDuration;
 
+        SoundManager.Instance.SetGlobalPitch(1.3f);
+
         StartCoroutine(FeverModeCoroutine());
     }
 
@@ -136,6 +142,8 @@ public class Fever : MonoBehaviour
         InitializeFeverGuageDecrease();
         CustomerManager.Instance.SetCustomerFever(false);
         FruitManager.Instance.MoveSpeed = 8.0f;
+
+        SoundManager.Instance.SetGlobalPitch(1.0f);
 
         feverGaugeSlider.value = 0;
     }

@@ -54,6 +54,7 @@ public class MiddleBossStagePanelBtn : MonoBehaviour
     // 추가 보상 버튼 클릭 시 동작
     private void OnExtraRewardBtnClicked()
     {
+        SoundManager.Instance.PlaySFX("Click");
         extraRewardBtn.interactable = false; // 버튼 클릭 불가
 
         // 버튼 흐리게 처리 (alpha값 변경)
@@ -67,6 +68,7 @@ public class MiddleBossStagePanelBtn : MonoBehaviour
     // 확인 버튼 클릭 시 동작
     private void OnVillageBtnClicked()
     {
+        SoundManager.Instance.PlaySFX("Click");
         MiddleBossStageManager.Instance.EndMiddleBossStage();
         GameManager.Instance.CloseMiddleBossResultPanel();
         GameManager.Instance.SaveGameData();

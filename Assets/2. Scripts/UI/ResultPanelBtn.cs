@@ -15,6 +15,7 @@ public class ResultPanelBtn : MonoBehaviour
     // 지출 감소 버튼 클릭 시 동작
     private void OnReduceExpenditureClicked()
     {
+        SoundManager.Instance.PlaySFX("Click");
         GameManager.Instance.ReduceExpenditure();
         reduceExpenditureBtn.interactable = false; // 버튼 클릭 불가
 
@@ -27,6 +28,7 @@ public class ResultPanelBtn : MonoBehaviour
     // 결산완료 버튼 클릭 시 동작
     private void OnVillageBtnClicked()
     {
+        SoundManager.Instance.PlaySFX("Click");
         reduceExpenditureBtn.interactable = true;
         GameManager.Instance.CloseResultPanel();
         VillageManager.Instance.OpenVillage();

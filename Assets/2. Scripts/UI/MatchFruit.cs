@@ -15,6 +15,11 @@ public class MatchFruit : MonoBehaviour
     
     private int totalFruitPrice = 0;  // 과일 가격을 합산할 변수
 
+    public bool IsFruitMatched(FruitType fruitType)
+    {
+        return currentFruits.Count > 0 && currentFruits[0] == fruitType;
+    }
+
     // 탕후루 초기화 메서드
     public void InitializeTangHulu()
     {
@@ -64,7 +69,6 @@ public class MatchFruit : MonoBehaviour
         {
             Debug.LogError("FruitData 또는 Fruit Image가 없습니다.");
         }
-
     }
 
     // 과일 맞췄을 때 호출될 메서드
@@ -74,6 +78,8 @@ public class MatchFruit : MonoBehaviour
         {
             if (currentFruits[0] == selectedFruit)
             {
+                FruitTouchSFX();
+
                 // Fever 게이지 획득
                 fever.IncreaseFeverGauge();
 
@@ -117,6 +123,8 @@ public class MatchFruit : MonoBehaviour
             else
             {
                 // 틀린 과일을 선택했을 때 처리
+                SoundManager.Instance.PlaySFX("FruitFail");
+
                 if (MiddleBossStageManager.Instance.isMiddleBossStage == true)
                 {
                     TimeManager.Instance.TimerPlusMinusUI(false);
@@ -172,6 +180,13 @@ public class MatchFruit : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void FruitTouchSFX()
+    {
+        int randomIndex = Random.Range(1, 6);
+        string sfxName = $"Fruit{randomIndex}";
+        SoundManager.Instance.PlaySFX(sfxName);
     }
 
     // 모든 과일을 맞췄을 때 호출될 메서드

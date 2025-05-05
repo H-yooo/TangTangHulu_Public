@@ -74,6 +74,7 @@ public class BossStagePanelBtn : MonoBehaviour
     // 확인 버튼 클릭 시 동작
     private void OnVillageBtnClicked()
     {
+        SoundManager.Instance.PlaySFX("Click");
         BossStageManager.Instance.EndBossStage();
         GameManager.Instance.CloseMiddleBossResultPanel();
         GameManager.Instance.SaveGameData();

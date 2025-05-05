@@ -37,6 +37,8 @@ public class ShopUpgradeButton : MonoBehaviour
     {
         if (GoldManager.Instance.Gold >= currentUpgradeData.gold)
         {
+            SoundManager.Instance.PlaySFX("Purchase");
+
             GoldManager.Instance.DecreaseGold(currentUpgradeData.gold);
             upgradeLevelText.text = $"Level: {currentUpgradeData.level}";
 

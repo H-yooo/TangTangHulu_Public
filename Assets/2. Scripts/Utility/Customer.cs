@@ -82,12 +82,28 @@ public class Customer : MonoBehaviour
         animator.SetBool("isIdle", false); // Idle 상태 해제
         if (isSatisfy)
         {
+            SuccessSFX();
             animator.SetTrigger("Satisfy");
         }
         else
         {
+            FailSFX();
             animator.SetTrigger("Dissatisfy");
         }
+    }
+
+    private void SuccessSFX()
+    {
+        int randomIndex = Random.Range(1, 4);
+        string sfxName = $"Success{randomIndex}";
+        SoundManager.Instance.PlaySFX(sfxName);
+    }
+
+    private void FailSFX()
+    {
+        int randomIndex = Random.Range(1, 4);
+        string sfxName = $"Fail{randomIndex}";
+        SoundManager.Instance.PlaySFX(sfxName);
     }
 
     // 에니메이션 이벤트로 호출

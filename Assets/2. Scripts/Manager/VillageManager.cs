@@ -41,6 +41,7 @@ public class VillageManager : GenericSingleton<VillageManager>
 
     private void OnMiddleBossPanelOpen()
     {
+        SoundManager.Instance.PlaySFX("Click");
         isMiddleBossPanelOpen = true;
         middleBossPanel.SetActive(true);
         openShop.SetActive(false);
@@ -48,6 +49,7 @@ public class VillageManager : GenericSingleton<VillageManager>
 
     private void OnBossPanelOpen()
     {
+        SoundManager.Instance.PlaySFX("Click");
         isBossPanelOpen = true;
         bossPanel.SetActive(true);
         openShop.SetActive(false);
@@ -55,6 +57,7 @@ public class VillageManager : GenericSingleton<VillageManager>
 
     private void OnFruitUpgradePanelOpen()
     {
+        SoundManager.Instance.PlaySFX("Click");
         isFruitUpgradePanelOpen = true;
         fruitUpgradePanel.SetActive(true);
         openShop.SetActive(false);
@@ -62,6 +65,7 @@ public class VillageManager : GenericSingleton<VillageManager>
 
     private void OnShopUpgradePanelOpen()
     {
+        SoundManager.Instance.PlaySFX("Click");
         isShopPanelOpen = true;
         shopUpgradePanel.SetActive(true);
         openShop.SetActive(false);
@@ -69,9 +73,11 @@ public class VillageManager : GenericSingleton<VillageManager>
 
     private void OnBranchPanelOpen()
     {
-        isBranchPanelOpen = true;
-        branchPanel.SetActive(true);
-        openShop.SetActive(false);
+        SoundManager.Instance.PlaySFX("Click");
+        NotificationCanvas.Instance.ShowNotificationPanel1("추후 업데이트 예정입니다!");
+        //isBranchPanelOpen = true;
+        //branchPanel.SetActive(true);
+        //openShop.SetActive(false);
     }
 
     public void OnOpenShop()
@@ -83,6 +89,7 @@ public class VillageManager : GenericSingleton<VillageManager>
 
     public void ClosePanelBtn()
     {
+        SoundManager.Instance.PlaySFX("Click");
         if (isMiddleBossPanelOpen)
         {
             middleBossPanel.SetActive(false);
@@ -121,6 +128,7 @@ public class VillageManager : GenericSingleton<VillageManager>
         StageManager.Instance.UpdateStageUI();
         GoldManager.Instance.UpdateGoldUI();
         village.SetActive(true);
+        SoundManager.Instance.PlayBGM("Village", 0f);
     }
 
     public void CloseVillage()

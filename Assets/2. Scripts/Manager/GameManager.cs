@@ -32,6 +32,7 @@ public class GameManager : GenericSingleton<GameManager>
     private void Start()
     {
         startingGold = GoldManager.Instance.Gold;
+        SoundManager.Instance.PlayBGM("Lobby");
     }
 
     public void SetSelectedSlot(string slot)
@@ -215,11 +216,12 @@ public class GameManager : GenericSingleton<GameManager>
     {
         fever.InitializeFeverGuageDecrease();
 
-        VillageManager.Instance.ClosePanelBtn();
+        //VillageManager.Instance.ClosePanelBtn();
 
         if (!MiddleBossStageManager.Instance.isMiddleBossStage == true && !BossStageManager.Instance.isBossStage == true)
         {
             StageManager.Instance.currentStageLevel++;
+            SoundManager.Instance.PlayBGM("NormalStage");
         }
         
         StageManager.Instance.StartStage();

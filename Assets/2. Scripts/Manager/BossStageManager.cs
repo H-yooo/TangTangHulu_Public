@@ -62,6 +62,8 @@ public class BossStageManager : GenericSingleton<BossStageManager>
 
         matchFruit.ShowFruitToMatch();
         VillageManager.Instance.OnOpenShop();
+
+        SoundManager.Instance.PlayBGM("BossStage");
     }
 
     private void StartSubCameraHeightCheck()
@@ -319,6 +321,7 @@ public class BossStageManager : GenericSingleton<BossStageManager>
         subCamera.SetActive(false);
     }
 
+    // 보스 스테이지 종료 시 사용
     public void EndBossStage()
     {
         StopCoroutine(UpdateCompetitorCounts());

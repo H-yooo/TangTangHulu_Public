@@ -28,9 +28,15 @@ public class TimeManager : GenericSingleton<TimeManager>
         return currentTime;
     }
 
+    public float GetStageTime()
+    {
+        return stageTime;
+    }
+
     public bool IsTimerRunning
     {
         get { return isTimerRunning; }
+        set => isTimerRunning = value;
     }
 
     public void SetCurrentTime(float newTime)
